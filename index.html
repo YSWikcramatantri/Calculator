@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator 1.0</title>
+</head>
+
+<body>
+    <div class="grid-container1">
+        <div class="grid-item display">
+            <p id="display-text">0</p>
+        </div>
+        <div class="grid-item key-pad">
+            <button onclick="clearElement()">&larr;</button>
+            <button onclick="addString(' x ')">&times;</button>
+            <button>&divide;</button>
+            <button>&minus;</button>
+            <button onclick="addString(7)">7</button>
+            <button onclick="addString(8)">8</button>
+            <button onclick="addString(9)">9</button>
+            <button class="span-class-vertical-plus">&plus;</button>
+            <button onclick="addString(4)">4</button>
+            <button onclick="addString(5)">5</button>
+            <button onclick="addString(6)">6</button>
+
+            <button onclick="addString(1)">1</button>
+            <button onclick="addString(2)">2</button>
+            <button onclick="addString(3)">3</button>
+
+            <button class="span-class-horizontal-zero" onclick="addString(0)">0</button>
+            <button id="dot-mark" onclick="addString('.')">.</button>
+            <button class="span-class-vertical-equal">&equals;</button>
+
+        </div>
+    </div>
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</body>
+
+</html>
