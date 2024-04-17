@@ -13,25 +13,24 @@
             <p id="display-text">0</p>
         </div>
         <div class="grid-item key-pad">
-            <button onclick="clearElement()">&larr;</button>
-            <button onclick="addString(' x ')">&times;</button>
-            <button>&divide;</button>
-            <button>&minus;</button>
-            <button onclick="addString(7)">7</button>
-            <button onclick="addString(8)">8</button>
-            <button onclick="addString(9)">9</button>
-            <button class="span-class-vertical-plus">&plus;</button>
-            <button onclick="addString(4)">4</button>
-            <button onclick="addString(5)">5</button>
-            <button onclick="addString(6)">6</button>
+            <button onclick="clearElement()" id="clear-button">&larr;</button>
+            <button onclick="addString(' x ')" id="multiply-button">&times;</button>
+            <button onclick="addString(' / ')" id="divide-button">&divide;</button>
+            <button onclick="addString(' - ')" id="minus-button">&minus;</button>
+            <button onclick="addString(7)"  id="number7">7</button>
+            <button onclick="addString(8)"  id="number8">8</button>
+            <button onclick="addString(9)"  id="number9">9</button>
+            <button class="span-class-vertical-plus" onclick="addString(' + ')" id="plus-button">&plus;</button>
+            <button onclick="addString(4)" id="number4">4</button>
+            <button onclick="addString(5)" id="number5">5</button>
+            <button onclick="addString(6)" id="number6">6</button>
+            <button onclick="addString(1)" id="number1">1</button>
+            <button onclick="addString(2)" id="number2">2</button>
+            <button onclick="addString(3)" id="number3">3</button>
 
-            <button onclick="addString(1)">1</button>
-            <button onclick="addString(2)">2</button>
-            <button onclick="addString(3)">3</button>
-
-            <button class="span-class-horizontal-zero" onclick="addString(0)">0</button>
+            <button class="span-class-horizontal-zero" onclick="addString(0)" id="number0">0</button>
             <button id="dot-mark" onclick="addString('.')">.</button>
-            <button class="span-class-vertical-equal">&equals;</button>
+            <button class="span-class-vertical-equal" onclick="operate()" id="eqaul-mark">&equals;</button>
 
         </div>
     </div>
